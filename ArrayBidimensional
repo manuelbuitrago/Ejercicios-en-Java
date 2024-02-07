@@ -1,0 +1,20 @@
+		//ARRAY BIDIMENSIONAL RELLENO CON NUMERO ALEATORIO GENERADO
+        
+		Random numaleatorio = new Random();
+		
+		int [][] miarray = new int[10][10];
+		
+		for(int i = 0; i<miarray.length; i++) {
+			
+			System.out.print("\n");
+			
+			for (int j = 0; j<miarray.length; j++) {
+				
+				miarray[i][j] = numaleatorio.nextInt(10)+1; // con el +1 evitamos tener un cero y conseguimos llegar al 10.
+				
+				System.out.print(miarray[i][j] + " ");
+			}
+			
+		}
+		System.out.println("\n");
+		System.out.println("El número en la posición elegida es: " + miarray[0][0]);
