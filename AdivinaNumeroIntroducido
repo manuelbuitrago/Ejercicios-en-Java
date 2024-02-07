@@ -1,0 +1,22 @@
+		//NUMERO ALEATORIO ADIVINADO CON WHILE
+		int numerointro = 0;
+		
+		Random alea = new Random();
+		
+		int numeroale = alea.nextInt(20);
+		
+		System.out.println(numeroale);
+		
+		System.out.println("Introduce un número");
+		
+		Scanner intt = new Scanner(System.in);
+
+		while(numerointro != numeroale) {
+			
+			numerointro = intt.nextInt();
+			
+			if (numerointro != numeroale) System.out.println("Error, no es el número");
+			
+			else System.out.println("Correcto, acertaste");
+			
+		}
