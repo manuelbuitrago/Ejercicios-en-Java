@@ -1,0 +1,35 @@
+		//SECUENCIA DE FIBONACCI EN UN ARRAY
+		
+		System.out.print("Secuencia Fibonacci inicial" + "\n"); //Título 1
+		
+		int [] array = new int [12];
+		
+
+		array[0] = 0;
+		array[1] = 1;
+		
+		for (int i = 2; i < 12; i++) {
+			
+			array[i] = array[i-1] + array[i-2];
+			
+		}
+		
+		for(int i = 0; i <12; i++) {
+			
+			System.out.print(array[i] + " ");
+			
+		}
+
+		System.out.println("\n" + "Secuencia invertida"); //Salto de linea y título 2
+		
+		//INVERTIMOS LA SECUENCIA ANTERIOR EN OTRO ARRAY
+
+		int [] reverse = new int [array.length];
+		
+		for( int i = array.length -1; i >= 0; i--) {
+			
+			reverse[i] = array[i];
+			
+			System.out.print(reverse[i] + " ");
+			
+		}
